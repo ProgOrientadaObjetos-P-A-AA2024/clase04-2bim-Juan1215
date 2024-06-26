@@ -27,7 +27,7 @@ public class Ejecutor {
         
         
         ArriendoLocalComida arriendoComida2 = new ArriendoLocalComida(
-                "Christian Cruz", 300, 10, 20.2, 40.2);
+                "Christian Cruz", 300, 10, 20.2, 40.2);     
         
         
         
@@ -41,14 +41,17 @@ public class Ejecutor {
         arriendoSesiones.establecerValorAmplificacion(20); // en $
         
         listaArriendos.add(arriendoComida);
+        listaArriendos.add(arriendoComida2);
         listaArriendos.add(arriendoComercial);
         listaArriendos.add(arriendoSesiones);
         
         for (int i = 0; i < listaArriendos.size(); i++) {
+            // Se esta acoplando a las calses que tienen por si un 
+            // establecerArriendoMensual
             listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
                                                             // métodos abstracto
             System.out.println(listaArriendos.get(i));
-            System.out.println();
+            System.out.println(); 
         }
         
         
